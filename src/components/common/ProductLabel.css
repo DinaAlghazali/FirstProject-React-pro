@@ -1,0 +1,27 @@
+.product-label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1;
+}
+
+/* 🔴 Red discount label */
+.product-label.red {
+  background-color: #db4444;
+}
+
+/* 🟢 Green “NEW” label */
+.product-label.green {
+  background-color: #00c853;
+}
+
+/* Responsive size adjustment */
+@media (max-width: 768px) {
+  .product-label {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}

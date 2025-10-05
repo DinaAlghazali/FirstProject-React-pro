@@ -1,0 +1,167 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.hero__container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.hero__categories {
+  flex: 0 0 250px;
+  border-right: 1px solid #e6e6e6;
+}
+
+.hero__categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__categories li {
+  font-size: 16px;
+  padding: 10px 0;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero__categories li:hover {
+  color: #db4444;
+  transform: translateX(2px);
+}
+
+.hero__arrow {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Hero Banner */
+.hero__banner {
+  position: relative;
+  flex: 1;
+  background-color: #000;
+  color: #fff;
+  /* border-radius: 6px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 80px 60px 60px;
+}
+
+.hero__content {
+  max-width: 50%;
+}
+
+.hero__series {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero__apple {
+  width: 24px;
+  height: 24px;
+}
+
+.hero__content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero__button {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.hero__image img {
+  width: 380px;
+  object-fit: contain;
+  transform: translateY(20px);
+}
+
+.hero__dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #db4444;
+  transform: scale(1.2);
+}
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__categories {
+    border-right: none;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .hero__categories li {
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
+
+  .hero__banner {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__image img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__content h1 {
+    font-size: 32px;
+  }
+
+  .hero__banner {
+    padding: 30px 16px;
+  }
+}

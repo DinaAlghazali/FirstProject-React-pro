@@ -1,0 +1,68 @@
+.best-selling-section {
+  position: relative;
+  max-width: 1170px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Header (title + arrows) */
+.best-selling__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Scrollable product row */
+.best-selling__scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 16px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.best-selling__scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.best-selling__scroll > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* Controls (arrows) */
+.best-selling__controls {
+  display: flex;
+  gap: 12px;
+}
+
+.scroll-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-btn:hover {
+  background-color: #db4444;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .best-selling__controls {
+    display: none;
+  }
+
+  .best-selling__scroll {
+    gap: 12px;
+  }
+}

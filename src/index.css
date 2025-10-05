@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-menu {
+  width: 200px;
+}
+
+.banner {
+  flex: 1;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.banner-img {
+  max-width: 300px;
+}
+
+.shop-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

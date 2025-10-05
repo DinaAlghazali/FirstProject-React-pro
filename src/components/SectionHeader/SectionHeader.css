@@ -1,0 +1,145 @@
+.section-header {
+  max-width: 1170px;
+  /* margin: 80px auto 40px; */
+  /* padding: 0 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ----------- TOP (Today's) ----------- */
+.section-header__top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-header__tag-box {
+  width: 20px;
+  height: 40px;
+  background-color: #db4444;
+  border-radius: 4px;
+}
+
+.section-header__tag-text {
+  color: #db4444;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ----------- BOTTOM ROW ----------- */
+.section-header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE (Title + Timer) */
+.section-header__left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.section-header__title {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  line-height: 48px;
+}
+
+/* TIMER */
+.section-header__timer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-header__timer div {
+  display: flex;
+  flex-direction: column; /* ✅ يجعل النص فوق الرقم */
+  align-items: center;
+  text-align: center;
+}
+
+.section-header__timer span {
+  font-size: 12px;
+  /* color: #db4444; */
+  /* margin-bottom: 4px; */
+}
+
+.section-header__timer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+}
+
+.colon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #db4444;
+  font-weight: 600;
+  margin: 0 6px;
+  line-height: 1;
+}
+
+/* ARROWS */
+.section-header__arrows {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-btn:hover {
+  background-color: #db4444;
+  color: #fff;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 1024px) {
+  .section-header__title {
+    font-size: 30px;
+  }
+
+  .section-header__timer h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .section-header__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow-btn {
+    width: 36px;
+    height: 36px;
+  }
+}

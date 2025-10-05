@@ -1,0 +1,46 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.banner-content h4 {
+  color: #555;
+  font-size: 14px;
+}
+
+.banner-content h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.shop-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.banner-img {
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-content {
+    max-width: 100%;
+  }
+}

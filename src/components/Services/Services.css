@@ -1,0 +1,15 @@
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+}
