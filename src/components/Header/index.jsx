@@ -2,8 +2,18 @@ import React from "react";
 import "./Header.css";
 import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import Search from "../common/Search";
+import { useNavigate , NavLink } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
+
+  const goToWichList = () => {
+    navigate("/wishlist"); // 👈 navigate programmatically
+  };
+
+  const goToCart = () => {
+    navigate("/cart"); // 👈 navigate programmatically
+  };
   return (
     <header className="header">
       <div className="header__container">
@@ -12,16 +22,16 @@ export default function Header() {
         </div>
 
         <nav className="header__nav">
-          <a href="#" className="header__link active">Home</a>
-          <a href="#" className="header__link">Contact</a>
-          <a href="#" className="header__link">About</a>
-          <a href="#" className="header__link">Sign Up</a>
+          <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")}>Home</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "") }>Contact</NavLink>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "")}>About</NavLink>
+          <NavLink to="/signup" className={({ isActive }) => (isActive ? "active-link" : "")} >Sign Up</NavLink>
         </nav>
 
         <div className="header__actions">
           <Search />
-          <FaRegHeart className="header__icon" />
-          <FaShoppingCart className="header__icon" />
+          <FaRegHeart className="header__icon" onClick={goToWichList}/>
+          <FaShoppingCart className="header__icon" onClick={goToCart} />
         </div>
       </div>
     </header>

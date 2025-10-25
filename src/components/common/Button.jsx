@@ -3,6 +3,7 @@ import "./Button.css";
 
 export default function Button({
   label,
+  icon,
   variant = "primary",
   onClick,
   type = "button",
@@ -14,6 +15,7 @@ export default function Button({
       onClick={onClick}
       className={`lovable-btn lovable-btn--${variant} ${className}`}
     >
+      {icon}
       {label}
     </button>
   );

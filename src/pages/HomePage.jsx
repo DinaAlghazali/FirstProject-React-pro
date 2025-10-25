@@ -14,9 +14,6 @@ import Footer from "../components/Footer";
 export default function HomePage() {
   return (
     <>
-      <TopHeader />
-      <main>
-        <Header />
         <HeroSection />
         <FlashSales />
         <BrowseByCategory />
@@ -30,8 +27,6 @@ export default function HomePage() {
         {/* <ProductGrid title="New Arrivals" /> */}
         {/* <ProductGrid title="Best Sellers" /> */}
         {/* <Services /> */}
-      </main>
-      <Footer />
     </>
   );
 }

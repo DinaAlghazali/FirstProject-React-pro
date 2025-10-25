@@ -1,0 +1,119 @@
+.contact-section {
+	max-width: 1170px;
+	margin: 0 auto 140px;
+	padding: 0 20px
+}
+.contact-section__container {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px
+}
+.contact-section__container__sidebar {
+	flex-grow: 0;
+	flex-shrink: 0;
+	max-width: 340px;
+	width: 340px;
+	padding: 40px 35px;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+}
+.contact-section__container__sidebar__item>div {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+.contact-section__container__sidebar__item__icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(219, 68, 68, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-section__container__sidebar__item__text {
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 1);
+}
+.contact-section__container__Form {
+	flex-grow: 0;
+	flex-shrink: 0;
+	max-width: 800px;
+	width: 800px;
+	padding: 40px 31px;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+}
+p.text-bold {
+	font-weight: 500;
+	font-style: Medium;
+	color: rgba(0, 0, 0, 1)
+}
+p.text-md {
+	font-size: 14px;
+	margin-bottom: 16px;
+}
+.contact-section__container__sidebar__divider {
+	width: 100%;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.1);
+	margin: 32px 0;
+}
+.contact-form__group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 32px;
+}
+.contact-form__group input {
+	height: 50px;
+	opacity: 1;
+	border-radius: 4px;
+	background: rgba(245, 245, 245, 1);
+	border: none;
+	outline: none;
+	padding: 0 16px;
+	width: 100%;
+
+}
+.contact-form__group input[type="textarea"] {
+	display: flex;
+	align-items: flex-start;
+	height: 207px;
+}
+.contact-form__group input::placeholder {
+	color: rgba(0, 0, 0, .5);
+}
+.contact-form__footer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+.page-path {
+	display: flex;
+	margin: 80px 0
+}
+.page-path__item {
+	font-family: "Poppins";
+	font-size: 14px;
+	line-height: 21px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.Separator {
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0 12px
+}
+.page-path__item.active {
+	font-weight: 500;
+	color: rgba(0, 0, 0, 1);
+}
+

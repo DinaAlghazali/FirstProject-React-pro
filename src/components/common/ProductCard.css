@@ -99,7 +99,8 @@
   cursor: pointer;
 }
 
-.product-card:hover .product-card__add-btn {
+.product-card:hover .product-card__add-btn,
+.product-card__add-btn.show{
   bottom: 0;
 }
 

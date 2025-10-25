@@ -1,0 +1,19 @@
+.coupon input {
+	width: 300px !important;
+	height: 56px;
+	border: 1px solid rgba(0, 0, 0, 1);
+	border-radius: 4px;
+	padding: 0 24px;
+	box-sizing: border-box;
+
+}
+.coupon__btn {
+	height: 56px;
+}
+.coupon input::placeholder {
+	font-family: "Poppins";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: rgba(0, 0, 0, 0.5);
+}

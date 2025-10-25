@@ -1,0 +1,18 @@
+.page-path {
+	display: flex;
+	margin-bottom: 80px
+}
+.page-path__item {
+	font-family: "Poppins";
+	font-size: 14px;
+	line-height: 21px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.Separator {
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0 12px
+}
+.page-path__item.active {
+	font-weight: 500;
+	color: rgba(0, 0, 0, 1);
+}

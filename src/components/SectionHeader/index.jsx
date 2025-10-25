@@ -2,7 +2,7 @@ import React from "react";
 import "./SectionHeader.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-export default function SectionHeader({ tag = "Today's", title, showTimer = true }) {
+export default function SectionHeader({ tag = "Today's", title, showTimer = true, showBigTitle  = true }) {
   return (
     <div className="section-header">
       {/* --- Top (Today's) --- */}
@@ -12,7 +12,7 @@ export default function SectionHeader({ tag = "Today's", title, showTimer = true
       </div>
 
       {/* --- Bottom Row --- */}
-      <div className="section-header__bottom">
+      {showBigTitle&&(<div className="section-header__bottom">
         <div className="section-header__left">
           <h2 className="section-header__title">{title}</h2>
 
@@ -45,7 +45,7 @@ export default function SectionHeader({ tag = "Today's", title, showTimer = true
           <button className="arrow-btn"><FaArrowLeft /></button>
           <button className="arrow-btn"><FaArrowRight /></button>
         </div>
-      </div>
+      </div>)}
     </div>
   );
 }

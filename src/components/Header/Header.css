@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.header__link {
+.header__nav a{
   text-decoration: none;
   color: #000;
   font-size: 16px;
@@ -41,8 +41,8 @@
   transition: color 0.3s;
 }
 
-.header__link.active,
-.header__link:hover {
+.header__nav a.active-link,
+.header__nav q:hover {
   border-bottom: 2px solid #000;
   padding-bottom: 2px;
 }
